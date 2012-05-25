@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0628A934156E43DD00E20FDA /* FlickrSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A932156E43DD00E20FDA /* FlickrSearchViewController.m */; };
+		0628A935156E43DD00E20FDA /* FlickrSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0628A933156E43DD00E20FDA /* FlickrSearchViewController.xib */; };
+		0628A938156E440000E20FDA /* dbAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A937156E440000E20FDA /* dbAdapter.m */; };
+		0628A93B156E440F00E20FDA /* dbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A93A156E440F00E20FDA /* dbHelper.m */; };
+		0628A95B156E44DB00E20FDA /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A940156E44DB00E20FDA /* ASIAuthenticationDialog.m */; };
+		0628A95C156E44DB00E20FDA /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A943156E44DB00E20FDA /* ASIDataCompressor.m */; };
+		0628A95D156E44DB00E20FDA /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A945156E44DB00E20FDA /* ASIDataDecompressor.m */; };
+		0628A95E156E44DB00E20FDA /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A947156E44DB00E20FDA /* ASIDownloadCache.m */; };
+		0628A95F156E44DB00E20FDA /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A949156E44DB00E20FDA /* ASIFormDataRequest.m */; };
+		0628A960156E44DB00E20FDA /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A94B156E44DB00E20FDA /* ASIHTTPRequest.m */; };
+		0628A961156E44DB00E20FDA /* ASIHTTPSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0628A94E156E44DB00E20FDA /* ASIHTTPSample-Info.plist */; };
+		0628A962156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A951156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.m */; };
+		0628A963156E44DB00E20FDA /* ASIHTTPSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A953156E44DB00E20FDA /* ASIHTTPSampleViewController.m */; };
+		0628A964156E44DB00E20FDA /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A955156E44DB00E20FDA /* ASIInputStream.m */; };
+		0628A965156E44DB00E20FDA /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A957156E44DB00E20FDA /* ASINetworkQueue.m */; };
+		0628A966156E44DB00E20FDA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A95A156E44DB00E20FDA /* Reachability.m */; };
+		0628A969156E456C00E20FDA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0628A968156E456C00E20FDA /* CFNetwork.framework */; };
+		0628A96B156E45A200E20FDA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0628A96A156E45A200E20FDA /* MobileCoreServices.framework */; };
+		0628A96D156E45B100E20FDA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0628A96C156E45B100E20FDA /* libz.dylib */; };
+		0628A96F156E45E500E20FDA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0628A96E156E45E500E20FDA /* SystemConfiguration.framework */; };
+		0628A98C156E503200E20FDA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A974156E503100E20FDA /* NSObject+SBJson.m */; };
+		0628A98D156E503200E20FDA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A977156E503200E20FDA /* SBJsonParser.m */; };
+		0628A98E156E503200E20FDA /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A979156E503200E20FDA /* SBJsonStreamParser.m */; };
+		0628A98F156E503200E20FDA /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A97B156E503200E20FDA /* SBJsonStreamParserAccumulator.m */; };
+		0628A990156E503200E20FDA /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A97D156E503200E20FDA /* SBJsonStreamParserAdapter.m */; };
+		0628A991156E503200E20FDA /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A97F156E503200E20FDA /* SBJsonStreamParserState.m */; };
+		0628A992156E503200E20FDA /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A981156E503200E20FDA /* SBJsonStreamWriter.m */; };
+		0628A993156E503200E20FDA /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A983156E503200E20FDA /* SBJsonStreamWriterAccumulator.m */; };
+		0628A994156E503200E20FDA /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A985156E503200E20FDA /* SBJsonStreamWriterState.m */; };
+		0628A995156E503200E20FDA /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A987156E503200E20FDA /* SBJsonTokeniser.m */; };
+		0628A996156E503200E20FDA /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A989156E503200E20FDA /* SBJsonUTF8Stream.m */; };
+		0628A997156E503200E20FDA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A98B156E503200E20FDA /* SBJsonWriter.m */; };
+		0628A99B156E522D00E20FDA /* FlickrModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A99A156E522D00E20FDA /* FlickrModel.m */; };
+		0628A99F156E6F2400E20FDA /* DisplayImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0628A99D156E6F2400E20FDA /* DisplayImagesViewController.m */; };
+		0628A9A0156E6F2400E20FDA /* DisplayImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0628A99E156E6F2400E20FDA /* DisplayImagesViewController.xib */; };
+		06357D45156E180800AD2EA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06357D44156E180800AD2EA0 /* UIKit.framework */; };
+		06357D47156E180800AD2EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06357D46156E180800AD2EA0 /* Foundation.framework */; };
+		06357D49156E180800AD2EA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06357D48156E180800AD2EA0 /* CoreGraphics.framework */; };
+		06357D4B156E180800AD2EA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06357D4A156E180800AD2EA0 /* CoreData.framework */; };
+		06357D51156E180800AD2EA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06357D4F156E180800AD2EA0 /* InfoPlist.strings */; };
+		06357D53156E180800AD2EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06357D52156E180800AD2EA0 /* main.m */; };
+		06357D57156E180800AD2EA0 /* ViewControllerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06357D56156E180800AD2EA0 /* ViewControllerAppDelegate.m */; };
+		06357D5A156E180800AD2EA0 /* FlickrApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06357D58156E180800AD2EA0 /* FlickrApplication.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0628A931156E43DD00E20FDA /* FlickrSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrSearchViewController.h; sourceTree = "<group>"; };
+		0628A932156E43DD00E20FDA /* FlickrSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchViewController.m; sourceTree = "<group>"; };
+		0628A933156E43DD00E20FDA /* FlickrSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlickrSearchViewController.xib; sourceTree = "<group>"; };
+		0628A936156E440000E20FDA /* dbAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbAdapter.h; sourceTree = "<group>"; };
+		0628A937156E440000E20FDA /* dbAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbAdapter.m; sourceTree = "<group>"; };
+		0628A939156E440F00E20FDA /* dbHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbHelper.h; sourceTree = "<group>"; };
+		0628A93A156E440F00E20FDA /* dbHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbHelper.m; sourceTree = "<group>"; };
+		0628A93F156E44DB00E20FDA /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		0628A940156E44DB00E20FDA /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		0628A941156E44DB00E20FDA /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		0628A942156E44DB00E20FDA /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		0628A943156E44DB00E20FDA /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		0628A944156E44DB00E20FDA /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		0628A945156E44DB00E20FDA /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		0628A946156E44DB00E20FDA /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		0628A947156E44DB00E20FDA /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		0628A948156E44DB00E20FDA /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		0628A949156E44DB00E20FDA /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		0628A94A156E44DB00E20FDA /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		0628A94B156E44DB00E20FDA /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		0628A94C156E44DB00E20FDA /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		0628A94D156E44DB00E20FDA /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		0628A94E156E44DB00E20FDA /* ASIHTTPSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASIHTTPSample-Info.plist"; sourceTree = "<group>"; };
+		0628A94F156E44DB00E20FDA /* ASIHTTPSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPSample-Prefix.pch"; sourceTree = "<group>"; };
+		0628A950156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPSampleAppDelegate.h; sourceTree = "<group>"; };
+		0628A951156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPSampleAppDelegate.m; sourceTree = "<group>"; };
+		0628A952156E44DB00E20FDA /* ASIHTTPSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPSampleViewController.h; sourceTree = "<group>"; };
+		0628A953156E44DB00E20FDA /* ASIHTTPSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPSampleViewController.m; sourceTree = "<group>"; };
+		0628A954156E44DB00E20FDA /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		0628A955156E44DB00E20FDA /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		0628A956156E44DB00E20FDA /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		0628A957156E44DB00E20FDA /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		0628A958156E44DB00E20FDA /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		0628A959156E44DB00E20FDA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0628A95A156E44DB00E20FDA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0628A968156E456C00E20FDA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0628A96A156E45A200E20FDA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0628A96C156E45B100E20FDA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0628A96E156E45E500E20FDA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0628A973156E503100E20FDA /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		0628A974156E503100E20FDA /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		0628A975156E503100E20FDA /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		0628A976156E503200E20FDA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		0628A977156E503200E20FDA /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		0628A978156E503200E20FDA /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		0628A979156E503200E20FDA /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		0628A97A156E503200E20FDA /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		0628A97B156E503200E20FDA /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		0628A97C156E503200E20FDA /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		0628A97D156E503200E20FDA /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		0628A97E156E503200E20FDA /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		0628A97F156E503200E20FDA /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		0628A980156E503200E20FDA /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		0628A981156E503200E20FDA /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		0628A982156E503200E20FDA /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		0628A983156E503200E20FDA /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		0628A984156E503200E20FDA /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		0628A985156E503200E20FDA /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		0628A986156E503200E20FDA /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		0628A987156E503200E20FDA /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		0628A988156E503200E20FDA /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		0628A989156E503200E20FDA /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		0628A98A156E503200E20FDA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		0628A98B156E503200E20FDA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		0628A999156E522D00E20FDA /* FlickrModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrModel.h; sourceTree = "<group>"; };
+		0628A99A156E522D00E20FDA /* FlickrModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrModel.m; sourceTree = "<group>"; };
+		0628A99C156E6F2300E20FDA /* DisplayImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayImagesViewController.h; sourceTree = "<group>"; };
+		0628A99D156E6F2400E20FDA /* DisplayImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayImagesViewController.m; sourceTree = "<group>"; };
+		0628A99E156E6F2400E20FDA /* DisplayImagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayImagesViewController.xib; sourceTree = "<group>"; };
+		06357D40156E180800AD2EA0 /* FlickrApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06357D44156E180800AD2EA0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06357D46156E180800AD2EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06357D48156E180800AD2EA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06357D4A156E180800AD2EA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		06357D4E156E180800AD2EA0 /* FlickrApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrApplication-Info.plist"; sourceTree = "<group>"; };
+		06357D50156E180800AD2EA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06357D52156E180800AD2EA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06357D54156E180800AD2EA0 /* FlickrApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrApplication-Prefix.pch"; sourceTree = "<group>"; };
+		06357D55156E180800AD2EA0 /* ViewControllerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerAppDelegate.h; sourceTree = "<group>"; };
+		06357D56156E180800AD2EA0 /* ViewControllerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAppDelegate.m; sourceTree = "<group>"; };
+		06357D59156E180800AD2EA0 /* FlickrApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlickrApplication.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06357D3D156E180800AD2EA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0628A96F156E45E500E20FDA /* SystemConfiguration.framework in Frameworks */,
+				0628A96D156E45B100E20FDA /* libz.dylib in Frameworks */,
+				0628A96B156E45A200E20FDA /* MobileCoreServices.framework in Frameworks */,
+				0628A969156E456C00E20FDA /* CFNetwork.framework in Frameworks */,
+				06357D45156E180800AD2EA0 /* UIKit.framework in Frameworks */,
+				06357D47156E180800AD2EA0 /* Foundation.framework in Frameworks */,
+				06357D49156E180800AD2EA0 /* CoreGraphics.framework in Frameworks */,
+				06357D4B156E180800AD2EA0 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0628A93C156E443000E20FDA /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				0628A936156E440000E20FDA /* dbAdapter.h */,
+				0628A937156E440000E20FDA /* dbAdapter.m */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+		0628A93D156E443F00E20FDA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0628A939156E440F00E20FDA /* dbHelper.h */,
+				0628A93A156E440F00E20FDA /* dbHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		0628A93E156E445200E20FDA /* Search View */ = {
+			isa = PBXGroup;
+			children = (
+				0628A931156E43DD00E20FDA /* FlickrSearchViewController.h */,
+				0628A932156E43DD00E20FDA /* FlickrSearchViewController.m */,
+				0628A933156E43DD00E20FDA /* FlickrSearchViewController.xib */,
+			);
+			name = "Search View";
+			sourceTree = "<group>";
+		};
+		0628A967156E44E300E20FDA /* ASIHttp */ = {
+			isa = PBXGroup;
+			children = (
+				0628A93F156E44DB00E20FDA /* ASIAuthenticationDialog.h */,
+				0628A940156E44DB00E20FDA /* ASIAuthenticationDialog.m */,
+				0628A941156E44DB00E20FDA /* ASICacheDelegate.h */,
+				0628A942156E44DB00E20FDA /* ASIDataCompressor.h */,
+				0628A943156E44DB00E20FDA /* ASIDataCompressor.m */,
+				0628A944156E44DB00E20FDA /* ASIDataDecompressor.h */,
+				0628A945156E44DB00E20FDA /* ASIDataDecompressor.m */,
+				0628A946156E44DB00E20FDA /* ASIDownloadCache.h */,
+				0628A947156E44DB00E20FDA /* ASIDownloadCache.m */,
+				0628A948156E44DB00E20FDA /* ASIFormDataRequest.h */,
+				0628A949156E44DB00E20FDA /* ASIFormDataRequest.m */,
+				0628A94A156E44DB00E20FDA /* ASIHTTPRequest.h */,
+				0628A94B156E44DB00E20FDA /* ASIHTTPRequest.m */,
+				0628A94C156E44DB00E20FDA /* ASIHTTPRequestConfig.h */,
+				0628A94D156E44DB00E20FDA /* ASIHTTPRequestDelegate.h */,
+				0628A94E156E44DB00E20FDA /* ASIHTTPSample-Info.plist */,
+				0628A94F156E44DB00E20FDA /* ASIHTTPSample-Prefix.pch */,
+				0628A950156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.h */,
+				0628A951156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.m */,
+				0628A952156E44DB00E20FDA /* ASIHTTPSampleViewController.h */,
+				0628A953156E44DB00E20FDA /* ASIHTTPSampleViewController.m */,
+				0628A954156E44DB00E20FDA /* ASIInputStream.h */,
+				0628A955156E44DB00E20FDA /* ASIInputStream.m */,
+				0628A956156E44DB00E20FDA /* ASINetworkQueue.h */,
+				0628A957156E44DB00E20FDA /* ASINetworkQueue.m */,
+				0628A958156E44DB00E20FDA /* ASIProgressDelegate.h */,
+				0628A959156E44DB00E20FDA /* Reachability.h */,
+				0628A95A156E44DB00E20FDA /* Reachability.m */,
+			);
+			name = ASIHttp;
+			sourceTree = "<group>";
+		};
+		0628A998156E503E00E20FDA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0628A973156E503100E20FDA /* NSObject+SBJson.h */,
+				0628A974156E503100E20FDA /* NSObject+SBJson.m */,
+				0628A975156E503100E20FDA /* SBJson.h */,
+				0628A976156E503200E20FDA /* SBJsonParser.h */,
+				0628A977156E503200E20FDA /* SBJsonParser.m */,
+				0628A978156E503200E20FDA /* SBJsonStreamParser.h */,
+				0628A979156E503200E20FDA /* SBJsonStreamParser.m */,
+				0628A97A156E503200E20FDA /* SBJsonStreamParserAccumulator.h */,
+				0628A97B156E503200E20FDA /* SBJsonStreamParserAccumulator.m */,
+				0628A97C156E503200E20FDA /* SBJsonStreamParserAdapter.h */,
+				0628A97D156E503200E20FDA /* SBJsonStreamParserAdapter.m */,
+				0628A97E156E503200E20FDA /* SBJsonStreamParserState.h */,
+				0628A97F156E503200E20FDA /* SBJsonStreamParserState.m */,
+				0628A980156E503200E20FDA /* SBJsonStreamWriter.h */,
+				0628A981156E503200E20FDA /* SBJsonStreamWriter.m */,
+				0628A982156E503200E20FDA /* SBJsonStreamWriterAccumulator.h */,
+				0628A983156E503200E20FDA /* SBJsonStreamWriterAccumulator.m */,
+				0628A984156E503200E20FDA /* SBJsonStreamWriterState.h */,
+				0628A985156E503200E20FDA /* SBJsonStreamWriterState.m */,
+				0628A986156E503200E20FDA /* SBJsonTokeniser.h */,
+				0628A987156E503200E20FDA /* SBJsonTokeniser.m */,
+				0628A988156E503200E20FDA /* SBJsonUTF8Stream.h */,
+				0628A989156E503200E20FDA /* SBJsonUTF8Stream.m */,
+				0628A98A156E503200E20FDA /* SBJsonWriter.h */,
+				0628A98B156E503200E20FDA /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		06357D35156E180800AD2EA0 = {
+			isa = PBXGroup;
+			children = (
+				06357D4C156E180800AD2EA0 /* FlickrApplication */,
+				06357D43156E180800AD2EA0 /* Frameworks */,
+				06357D41156E180800AD2EA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06357D41156E180800AD2EA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06357D40156E180800AD2EA0 /* FlickrApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06357D43156E180800AD2EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0628A96E156E45E500E20FDA /* SystemConfiguration.framework */,
+				0628A96A156E45A200E20FDA /* MobileCoreServices.framework */,
+				0628A968156E456C00E20FDA /* CFNetwork.framework */,
+				06357D44156E180800AD2EA0 /* UIKit.framework */,
+				06357D46156E180800AD2EA0 /* Foundation.framework */,
+				06357D48156E180800AD2EA0 /* CoreGraphics.framework */,
+				06357D4A156E180800AD2EA0 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06357D4C156E180800AD2EA0 /* FlickrApplication */ = {
+			isa = PBXGroup;
+			children = (
+				0628A998156E503E00E20FDA /* JSON */,
+				0628A967156E44E300E20FDA /* ASIHttp */,
+				06357D55156E180800AD2EA0 /* ViewControllerAppDelegate.h */,
+				06357D56156E180800AD2EA0 /* ViewControllerAppDelegate.m */,
+				0628A99C156E6F2300E20FDA /* DisplayImagesViewController.h */,
+				0628A99D156E6F2400E20FDA /* DisplayImagesViewController.m */,
+				0628A99E156E6F2400E20FDA /* DisplayImagesViewController.xib */,
+				0628A999156E522D00E20FDA /* FlickrModel.h */,
+				0628A99A156E522D00E20FDA /* FlickrModel.m */,
+				06357D58156E180800AD2EA0 /* FlickrApplication.xcdatamodeld */,
+				0628A93E156E445200E20FDA /* Search View */,
+				0628A93C156E443000E20FDA /* Adapter */,
+				0628A93D156E443F00E20FDA /* Helper */,
+				06357D4D156E180800AD2EA0 /* Supporting Files */,
+			);
+			path = FlickrApplication;
+			sourceTree = "<group>";
+		};
+		06357D4D156E180800AD2EA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0628A96C156E45B100E20FDA /* libz.dylib */,
+				06357D4E156E180800AD2EA0 /* FlickrApplication-Info.plist */,
+				06357D4F156E180800AD2EA0 /* InfoPlist.strings */,
+				06357D52156E180800AD2EA0 /* main.m */,
+				06357D54156E180800AD2EA0 /* FlickrApplication-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06357D3F156E180800AD2EA0 /* FlickrApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06357D5D156E180800AD2EA0 /* Build configuration list for PBXNativeTarget "FlickrApplication" */;
+			buildPhases = (
+				06357D3C156E180800AD2EA0 /* Sources */,
+				06357D3D156E180800AD2EA0 /* Frameworks */,
+				06357D3E156E180800AD2EA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickrApplication;
+			productName = FlickrApplication;
+			productReference = 06357D40156E180800AD2EA0 /* FlickrApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06357D37156E180800AD2EA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 06357D3A156E180800AD2EA0 /* Build configuration list for PBXProject "FlickrApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06357D35156E180800AD2EA0;
+			productRefGroup = 06357D41156E180800AD2EA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06357D3F156E180800AD2EA0 /* FlickrApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06357D3E156E180800AD2EA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06357D51156E180800AD2EA0 /* InfoPlist.strings in Resources */,
+				0628A935156E43DD00E20FDA /* FlickrSearchViewController.xib in Resources */,
+				0628A961156E44DB00E20FDA /* ASIHTTPSample-Info.plist in Resources */,
+				0628A9A0156E6F2400E20FDA /* DisplayImagesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06357D3C156E180800AD2EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06357D53156E180800AD2EA0 /* main.m in Sources */,
+				06357D57156E180800AD2EA0 /* ViewControllerAppDelegate.m in Sources */,
+				06357D5A156E180800AD2EA0 /* FlickrApplication.xcdatamodeld in Sources */,
+				0628A934156E43DD00E20FDA /* FlickrSearchViewController.m in Sources */,
+				0628A938156E440000E20FDA /* dbAdapter.m in Sources */,
+				0628A93B156E440F00E20FDA /* dbHelper.m in Sources */,
+				0628A95B156E44DB00E20FDA /* ASIAuthenticationDialog.m in Sources */,
+				0628A95C156E44DB00E20FDA /* ASIDataCompressor.m in Sources */,
+				0628A95D156E44DB00E20FDA /* ASIDataDecompressor.m in Sources */,
+				0628A95E156E44DB00E20FDA /* ASIDownloadCache.m in Sources */,
+				0628A95F156E44DB00E20FDA /* ASIFormDataRequest.m in Sources */,
+				0628A960156E44DB00E20FDA /* ASIHTTPRequest.m in Sources */,
+				0628A962156E44DB00E20FDA /* ASIHTTPSampleAppDelegate.m in Sources */,
+				0628A963156E44DB00E20FDA /* ASIHTTPSampleViewController.m in Sources */,
+				0628A964156E44DB00E20FDA /* ASIInputStream.m in Sources */,
+				0628A965156E44DB00E20FDA /* ASINetworkQueue.m in Sources */,
+				0628A966156E44DB00E20FDA /* Reachability.m in Sources */,
+				0628A98C156E503200E20FDA /* NSObject+SBJson.m in Sources */,
+				0628A98D156E503200E20FDA /* SBJsonParser.m in Sources */,
+				0628A98E156E503200E20FDA /* SBJsonStreamParser.m in Sources */,
+				0628A98F156E503200E20FDA /* SBJsonStreamParserAccumulator.m in Sources */,
+				0628A990156E503200E20FDA /* SBJsonStreamParserAdapter.m in Sources */,
+				0628A991156E503200E20FDA /* SBJsonStreamParserState.m in Sources */,
+				0628A992156E503200E20FDA /* SBJsonStreamWriter.m in Sources */,
+				0628A993156E503200E20FDA /* SBJsonStreamWriterAccumulator.m in Sources */,
+				0628A994156E503200E20FDA /* SBJsonStreamWriterState.m in Sources */,
+				0628A995156E503200E20FDA /* SBJsonTokeniser.m in Sources */,
+				0628A996156E503200E20FDA /* SBJsonUTF8Stream.m in Sources */,
+				0628A997156E503200E20FDA /* SBJsonWriter.m in Sources */,
+				0628A99B156E522D00E20FDA /* FlickrModel.m in Sources */,
+				0628A99F156E6F2400E20FDA /* DisplayImagesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06357D4F156E180800AD2EA0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06357D50156E180800AD2EA0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06357D5B156E180800AD2EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06357D5C156E180800AD2EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06357D5E156E180800AD2EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrApplication/FlickrApplication-Prefix.pch";
+				INFOPLIST_FILE = "FlickrApplication/FlickrApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06357D5F156E180800AD2EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrApplication/FlickrApplication-Prefix.pch";
+				INFOPLIST_FILE = "FlickrApplication/FlickrApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06357D3A156E180800AD2EA0 /* Build configuration list for PBXProject "FlickrApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06357D5B156E180800AD2EA0 /* Debug */,
+				06357D5C156E180800AD2EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06357D5D156E180800AD2EA0 /* Build configuration list for PBXNativeTarget "FlickrApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06357D5E156E180800AD2EA0 /* Debug */,
+				06357D5F156E180800AD2EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		06357D58156E180800AD2EA0 /* FlickrApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				06357D59156E180800AD2EA0 /* FlickrApplication.xcdatamodel */,
+			);
+			currentVersion = 06357D59156E180800AD2EA0 /* FlickrApplication.xcdatamodel */;
+			path = FlickrApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 06357D37156E180800AD2EA0 /* Project object */;
+}
